@@ -19,7 +19,7 @@
 
 ## 방법2. Hash Table
 # Hash Table를 만들어 key:요소, value:index로 구성. target - 요소 = 다른 요소
-def twoSums(nums: list[int], target: int) -> list[int]:
+def twoSums(nums, target):
     hash_nums = {}
     
     for i in range(len(nums)):

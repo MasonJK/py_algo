@@ -44,4 +44,9 @@
 # print(py_list)
 # print(py_list[::-1])
 
+###
+
+# 오름차순으로 정렬된 배열에서 사용할 수 있는 이진탐색(binary search)
+# 복잡도는 O(logN)으로 매우 빠르다.
+
 
