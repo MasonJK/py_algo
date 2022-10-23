@@ -49,4 +49,8 @@
 # 오름차순으로 정렬된 배열에서 사용할 수 있는 이진탐색(binary search)
 # 복잡도는 O(logN)으로 매우 빠르다.
 
+###
 
+# sort와 sorted의 차이: sort는 원본을 수정한다.(in-place). 반며 sorted는 새로운 리스트를 만들어준다.
+
+###
