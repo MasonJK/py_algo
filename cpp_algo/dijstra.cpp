@@ -24,8 +24,15 @@ Dijstra::Dijstra(int map[WIDTH][HEIGHT], int start_x, int start_y, int goal_x, i
     goal_y_ = goal_y;
 
     // prior setting
+    std::cout<<"start_x: "<<start_x<<", start_y: "<<start_y<<std::endl;
     current_node = &node_map[start_x][start_y];
     current_node->set_gcost(0);
+    std::cout<<"0,0 address: "<<&node_map[0][0]<<std::endl;
+    std::cout<<"current_node address: "<<current_node<<std::endl;
+    std::cout<<"sizeof(node_map[0]): "<<sizeof(node_map[0])<<std::endl;
+    int current_x = int((current_node - &node_map[0][0])/sizeof(node_map[0]));
+    int current_y = int((current_node - &node_map[current_x][0])/sizeof(node_map[0][0]));
+    std::cout<<"x: "<<current_x<<", y: "<<current_y<<std::endl;
     std::cout<<"generated_dijstra"<<std::endl;
 }
 Dijstra::~Dijstra(){
